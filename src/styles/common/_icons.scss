@@ -1,0 +1,66 @@
+@font-face {
+	font-family: "icons";
+	src: url('../../../dist/assets/fontIcons/icons.eot');
+	src: url('../../../dist/assets/fontIcons/icons.eot?#iefix') format('eot'),
+		url('../../../dist/assets/fontIcons/icons.woff2') format('woff2'),
+		url('../../../dist/assets/fontIcons/icons.woff') format('woff'),
+		url('../../../dist/assets/fontIcons/icons.ttf') format('truetype'),
+		url('../../../dist/assets/fontIcons/icons.svg#icons') format('svg');
+}
+
+.icon:before {
+	font-family: "icons";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	/* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
+	text-decoration: none;
+	text-transform: none;
+}
+
+
+.icon-arrowNext:before {
+	content: "\E001";
+}
+
+.icon-arrowPrev:before {
+	content: "\E002";
+}
+
+.icon-Group2:before {
+	content: "\E003";
+}
+
+.icon-Group3:before {
+	content: "\E004";
+}
+
+.icon-Group4:before {
+	content: "\E005";
+}
+
+.icon-Group5:before {
+	content: "\E006";
+}
+
+.icon-Group6:before {
+	content: "\E007";
+}
+
+.icon-Group7:before {
+	content: "\E008";
+}
+
+.icon-Group8:before {
+	content: "\E009";
+}
+
+.icon-GroupBtn:before {
+	content: "\E00A";
+}
+
+.icon-Vector1:before {
+	content: "\E00B";
+}

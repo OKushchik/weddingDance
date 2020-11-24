@@ -35,7 +35,6 @@ $('.carousel-2').slick({
   centerMode: false,
   centerPadding: '50px',
   autoplay: false,
-  adaptiveHeight: true,
   responsive: [
     {
       breakpoint: 640,

@@ -10,8 +10,6 @@ $(window).on('load resize orientationchange', function() {
       mobileFirst: true,
       arrows: false,
       centerMode: true,
-      slidesToShow: 1,
-      autoplay: false,
       adaptiveHeight: true,
       responsive: [
         {
@@ -34,7 +32,6 @@ $('.carousel-2').slick({
   slidesToScroll: 2,
   centerMode: false,
   centerPadding: '50px',
-  autoplay: false,
   adaptiveHeight: true,
   responsive: [
     {
@@ -43,8 +40,6 @@ $('.carousel-2').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         centerMode: true,
-        slidesToShow: 1,
-        adaptiveHeight: true, 
       }
     }
   ]

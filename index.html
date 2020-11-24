@@ -60,7 +60,10 @@
       <button class="show-case__btn">Let Start</button>
     </div>
     <div class="show-case__img wrapper">
-      <img src="dist/img/first-dance-i.jpg" alt="first-dance">
+      <picture>
+        <source media="(min-width: 420px)" srcset="src/images/first-dance-i.jpg">
+        <img src="dist/img/first-dance-i.jpg" alt="first-danc">
+      </picture>
     </div>
   </section>
 
@@ -74,7 +77,12 @@
     <div class="services__items carousel">
       <div class="slick-block">
         <div class="service-block">
-          <img class="service-block__img" src="dist/img/1196.jpg" alt="pic-1">
+          <div class="service-block__img">
+            <picture>
+              <source media="(min-width: 420px)" srcset="src/images/1196.jpg">
+              <img src="dist/img/1196.jpg" alt="pic-1">
+            </picture>
+          </div>
           <h3 class="service-block__title">For Bride and Groom</h3>
           <p class="service-block__description">
             First Dance <br>
@@ -84,7 +92,12 @@
       </div>
       <div class="slick-block">
         <div class="service-block">
-          <img class="service-block__img" src="dist/img/image-1.jpg" alt="pic-2">
+          <div class="service-block__img">
+            <picture>
+              <source media="(min-width: 420px)" srcset="src/images/image-1.jpg">
+              <img src="dist/img/image-1.jpg" alt="pic-2">
+            </picture>
+          </div>
           <h3 class="service-block__title">For Guests</h3>
           <p class="service-block__description">
             Groomsmen Dance<br>
@@ -95,7 +108,12 @@
       </div>
       <div class="slick-block">
         <div class="service-block">
-          <img class="service-block__img" src="dist/img/image.jpg" alt="pic-3">
+          <div class="service-block__img">
+            <picture>
+              <source media="(min-width: 420px)" srcset="src/images/image.jpg">
+              <img src="dist/img/image.jpg" alt="pic-2" >
+            </picture>
+          </div>
           <h3 class="service-block__title">Other events</h3>
           <p class="service-block__description">
             Bridal Party Dance<br>
@@ -192,7 +210,10 @@
       <div class="slick-card">
         <div class="couch-card ">
           <div class="couch-card__img">
-            <img src="dist/img/girl.jpg" alt="girl">
+            <picture>
+              <source media="(min-width: 420px)" srcset="src/images/girl.jpg">
+              <img src="dist/img/girl.jpg" alt="girl">
+            </picture>
           </div>
           <div class="couch-card__inform">
             <h3 class="couch-card__num">01</h3>
@@ -222,10 +243,46 @@
       <div class="slick-card">
         <div class="couch-card ">
           <div class="couch-card__img">
-            <img src="dist/img/girl.jpg" alt="girl">
+            <picture>
+              <source media="(min-width: 420px)" srcset="src/images/boy.jpg">
+              <img src="dist/img/boy.jpg" alt="boy">
+            </picture>
           </div>
           <div class="couch-card__inform">
-            <h3 class="couch-card__num">01</h3>
+            <h3 class="couch-card__num">02</h3>
+            <h2 class="couch-card__name">Tom Wilspon</h2>
+            <h4 class="couch-card__perfom">Dancer</h4>
+            <table style="width:100%">
+              <tr>
+                <th>Work experience</th>
+                <td>10 years</td>
+              </tr>
+              <tr>
+                <th>Teacher for</th>
+                <td>5 years</td>
+              </tr>
+              <tr>
+                <th>Style</th>
+                <td>HipHop</td>
+              </tr>
+            </table>
+            <button class="couch-card__btn">
+              <span class="couch-card__btn--text">let’s start</span>
+              <span class="couch-card__btn--arrow"><i class="icon icon-GroupBtn"></i></span>
+            </button>
+          </div>
+       </div>
+      </div>
+      <div class="slick-card">
+        <div class="couch-card ">
+          <div class="couch-card__img">
+            <picture>
+              <source media="(min-width: 420px)" srcset="src/images/girl.jpg">
+              <img src="dist/img/girl.jpg" alt="girl">
+            </picture>
+          </div>
+          <div class="couch-card__inform">
+            <h3 class="couch-card__num">03</h3>
             <h2 class="couch-card__name">Ann Walker</h2>
             <h4 class="couch-card__perfom">Dancer</h4>
             <table style="width:100%">
@@ -252,24 +309,27 @@
       <div class="slick-card">
         <div class="couch-card ">
           <div class="couch-card__img">
-            <img src="dist/img/girl.jpg" alt="girl">
+            <picture>
+              <source media="(min-width: 420px)" srcset="src/images/boy.jpg">
+              <img src="dist/img/boy.jpg" alt="boy">
+            </picture>
           </div>
           <div class="couch-card__inform">
-            <h3 class="couch-card__num">01</h3>
-            <h2 class="couch-card__name">Ann Walker</h2>
+            <h3 class="couch-card__num">04</h3>
+            <h2 class="couch-card__name">Tom Wilspon</h2>
             <h4 class="couch-card__perfom">Dancer</h4>
             <table style="width:100%">
               <tr>
                 <th>Work experience</th>
-                <td>8 years</td>
+                <td> 10 years</td>
               </tr>
               <tr>
                 <th>Teacher for</th>
-                <td>3 years</td>
+                <td>5 years</td>
               </tr>
               <tr>
                 <th>Style</th>
-                <td>Viennese Waltz, Salsa</td>
+                <td>HipHop</td>
               </tr>
             </table>
             <button class="couch-card__btn">

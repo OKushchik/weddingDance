@@ -416,8 +416,7 @@ body {
         font-size: 16px;
     }
     &__btn {
-        margin-top: 88px;
-        margin-bottom: 80px;
+        margin-top: 50px;
         width: 161px;
         height: 46px;
         color: #FF699F;
@@ -547,20 +546,29 @@ footer {
     }
 
     .couch-card {
-            display: block;
+        &__img {
+            width: 60%
+        }
+        &__num {
+            margin-top: 15px;
+        }
+        &__inform {
+            width: 40%;
+            margin-left: 10px;
 
-            &__inform {
-                width: 100%;
-                padding-right: 33px;
+            th {
+                display: block;
+            }
 
-                th {
-                    display: block;
-                }
-
-                td {
-                    display: block;
-                    padding-top: 0;
+            td {
+                display: block;
+                padding-top: 0;
                 }  
+            }
+
+            &__btn {
+                width: 100%;
+                margin-top: 20px;
             }
 
         }
@@ -638,6 +646,17 @@ footer {
 
     .couch-card {
         position: relative;
+        display: block;
+        &__img {
+            width: 100%;
+        }
+        &__img {
+            width: 100%;
+        }
+        &__inform {
+            width: 100%;
+        }
+
 
         &__btn {
             width: 33px;
@@ -645,7 +664,7 @@ footer {
             border-radius: 50%;
             position: relative;
             display: block;
-            margin: 0 16px 16px auto;
+            margin: 0 32px 16px auto;
 
             &--text {
                 display: none;

@@ -11,6 +11,7 @@ $(window).on('load resize orientationchange', function() {
       arrows: false,
       centerMode: true,
       adaptiveHeight: true,
+      initialSlide: 1,
       responsive: [
         {
           breakpoint: 640,
@@ -33,6 +34,8 @@ $('.carousel-2').slick({
   centerMode: false,
   centerPadding: '50px',
   adaptiveHeight: true,
+  initialSlide: 1,
+
   responsive: [
     {
       breakpoint: 640,

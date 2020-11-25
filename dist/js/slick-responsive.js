@@ -33,7 +33,6 @@ $('.carousel-2').slick({
   slidesToScroll: 2,
   centerMode: false,
   centerPadding: '50px',
-  adaptiveHeight: true,
   prevArrow: '<button type="button" class="arrows__prev arrow"><i class="icon icon-arrowPrev"></i></button>',
   nextArrow: '<button type="button" class="arrows__next arrow"><i class="icon icon-arrowNext"></i></button>',
   appendArrows: $('.arrows'),

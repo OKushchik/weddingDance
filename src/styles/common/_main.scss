@@ -50,6 +50,19 @@ body {
     }
     
 }
+.btn {
+    width: 162px;
+    height: 46px;
+    color: #FF699F;
+    background-color: transparent;
+    border: 2px solid #FF699F;
+    border-radius: 3px;
+    &:hover {
+        background-color: lightpink;
+        color: white;
+    }
+}
+
 a {
     color: #000000;
     text-decoration: none;    
@@ -101,6 +114,11 @@ a {
             border: 3px solid #000000;
             border-radius: 3px;
             background-color: transparent;
+
+            &:hover {
+                background-color: lightgray;
+                transform: scale(1.1,1.1);
+            }
 		}
 }
 
@@ -186,14 +204,14 @@ a {
             }
         }
 
-        &__btn {
-            width: 162px;
-            height: 46px;
-            color: #FF699F;
-            background-color: transparent;
-            border: 2px solid #FF699F;
-            border-radius: 3px;
-        }
+        // &__btn {
+        //     width: 162px;
+        //     height: 46px;
+        //     color: #FF699F;
+        //     background-color: transparent;
+        //     border: 2px solid #FF699F;
+        //     border-radius: 3px;
+        // }
 
         &__backTitle {
             position: absolute;
@@ -241,12 +259,12 @@ a {
         &__btn {
             margin-top: 40px;
             margin-bottom: 80px;
-            width: 161px;
-            height: 46px;
-            color: #FF699F;
-            background-color: transparent;
-            border: 2px solid #FF699F;
-            border-radius: 3px;
+            // width: 161px;
+            // height: 46px;
+            // color: #FF699F;
+            // background-color: transparent;
+            // border: 2px solid #FF699F;
+            // border-radius: 3px;
         }
 
         &__img {
@@ -441,12 +459,12 @@ a {
     }
     &__btn {
         margin-top: 50px;
-        width: 161px;
-        height: 46px;
-        color: #FF699F;
-        background-color: transparent;
-        border: 2px solid #FF699F;
-        border-radius: 3px;
+        // width: 161px;
+        // height: 46px;
+        // color: #FF699F;
+        // background-color: transparent;
+        // border: 2px solid #FF699F;
+        // border-radius: 3px;
 
         &--arrow {
             display: none;
@@ -519,7 +537,6 @@ footer {
             width: 112.7px;
             height: 32.2px;
             margin-bottom: 0;
-            
         }
 
         &__img {

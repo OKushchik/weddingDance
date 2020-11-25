@@ -401,7 +401,7 @@ a {
         margin-bottom: 30px;
     }
 
-    .slick-arrow, .slick-dots {
+     .slick-dots {
         visibility: hidden;
         width: 0; 
         height: 0;
@@ -486,6 +486,8 @@ a {
 
     .arrow {
         font-size: 30px;
+        background-color: transparent;
+        border: none;
         :hover {
             cursor: pointer;
         }

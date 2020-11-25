@@ -34,12 +34,14 @@ $('.carousel-2').slick({
   centerMode: false,
   centerPadding: '50px',
   adaptiveHeight: true,
-  initialSlide: 1,
-
+  prevArrow: '<button type="button" class="arrows__prev arrow"><i class="icon icon-arrowPrev"></i></button>',
+  nextArrow: '<button type="button" class="arrows__next arrow"><i class="icon icon-arrowNext"></i></button>',
+  appendArrows: $('.arrows'),
   responsive: [
     {
       breakpoint: 640,
       settings: {
+        initialSlide: 1,
         slidesToShow: 1,
         slidesToScroll: 1,
         centerMode: true,
@@ -49,37 +51,44 @@ $('.carousel-2').slick({
 });
 
 
-//imitation click on errows
-  let arrowsPrev = document.querySelector('.arrows__prev');
-  let arrowsNext = document.querySelector('.arrows__next');
-  function imitErrows (){
-    let slickPrev = document.querySelector('.slick-prev');
-    let slickNext = document.querySelector('.slick-next');
+// //imitation click on errows
+  let arrowsPrev = document.querySelector('.arrows__prev'); 
+  let arrowsNext = document.querySelector('.arrows__next'); 
+//   function imitErrows (){
+//     let slickPrev = document.querySelector('.slick-prev');
+//     let slickNext = document.querySelector('.slick-next');
 
-    arrowsPrev.addEventListener('click', getObj.bind(null,slickPrev))
-    arrowsNext.addEventListener('click', getObj.bind(null,slickNext))
+//     arrowsPrev.addEventListener('click', getObj.bind(null,slickPrev))
+//     arrowsNext.addEventListener('click', getObj.bind(null,slickNext))
 
-    function getObj (getObj) {
-      let event = new Event("click");
-      getObj.dispatchEvent(event);
-    }
-  }
-imitErrows();
+//     function getObj (getObj) {
+//       let event = new Event("click");
+//       getObj.dispatchEvent(event);
+//     }
+//   }
+// imitErrows();
 
 // errowsInfo
-let current = document.querySelector('.couches .slick-current');
-let countOfCouchesBlock = Math.ceil(+document.querySelectorAll('.couch-card').length/2);
-let currentIndex = Math.ceil((+current.getAttribute('data-slick-index') + 1)/2);
 let arrowsInform = document.querySelector('.arrows__inform');
 let transform = document.querySelector('.slick-track');
 
-arrowsInform.textContent = `${currentIndex} of ${countOfCouchesBlock}`
-
 function changArrowInfo (){
-  current = document.querySelector('.couches .slick-current');
-  currentIndex = Math.ceil((+current.getAttribute('data-slick-index') + 1)/2);
+  let current = document.querySelector('.couches .slick-current');
+  let countOfCouchesBlock = Math.ceil(+document.querySelectorAll('.couch-card').length/2);
+  let currentIndex = Math.ceil((+current.getAttribute('data-slick-index') + 1)/2);
   arrowsInform.textContent = `${currentIndex} of ${countOfCouchesBlock}`
+  if(currentIndex === 1) {
+    arrowsPrev.style.color = 'gray'
+    arrowsNext.style.color = 'black'
+  } else if(currentIndex === countOfCouchesBlock) {
+    arrowsPrev.style.color = 'black'
+    arrowsNext.style.color = 'gray'
+  } else {
+    arrowsPrev.style.color = 'black'
+    arrowsNext.style.color = 'black'
+  }
 }
+changArrowInfo ();
 arrowsNext.addEventListener('click', function(){
   changArrowInfo()
 })
@@ -90,44 +99,5 @@ transform.onclick = function(){
   changArrowInfo ()
 }
 
-
-
-
-// errowsInfo
-// function infoErrow (count = 0){
-//   console.log(count)
-//   if ($(window).width() > 420) {
-//     count = Math.ceil(count/2)
-//   }
-  
-//   let slickDots = document.querySelectorAll('.couches ul.slick-dots li button');
-//   let arrowsInform = document.querySelector('.arrows__inform');
-
-// arrowsInform.textContent = slickDots[count].getAttribute('aria-label')
-//   arrowsNext.addEventListener('click', function(){
-//     if (count<slickDots.length-1){
-//       count ++;
-//     } else {
-//       count = slickDots.length-1;
-//     }
-//   arrowsInform.textContent = slickDots[count].getAttribute('aria-label')
-//   })
-//   arrowsPrev.addEventListener('click', function(){
-//     if (count>0){
-//       count --;
-//     } else {
-//       count = 0;
-//     }
-//     arrowsInform.textContent = slickDots[count].getAttribute('aria-label')
-//   })
-// }
-// infoErrow()
-
-// $(window).on('resize', function() {
-//   let current = document.querySelector('.couches .slick-current');
-//   let currentIndex = current.getAttribute('data-slick-index')
-//   imitErrows();
-//   infoErrow(currentIndex)
-// })
 
 

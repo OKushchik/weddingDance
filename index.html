@@ -429,7 +429,10 @@
       burgerPopup.style.display = 'block';
     }
     function closePopup() {
-      burgerPopup.style.display = 'none';
+      setTimeout(function(){ 
+              burgerPopup.style.display = 'none';
+      }, 500);
+
     }
     </script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>

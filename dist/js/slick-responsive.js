@@ -121,3 +121,40 @@ transform.onclick = function(){
 
 
 
+/////
+const element = document.querySelector('.burger-popup');
+const elementOpen = document.querySelector('.burger-icon.burger-open');
+const elementClose = document.querySelector('.burger-icon.burger-close');
+
+// elementOpen.addEventListener('click', function(){
+//   if(element.classList.contains('animate__fadeInDownBig')) {
+//     element.classList.remove('animate__animated', 'animate__fadeInDownBig')
+//   } else if (element.classList.contains('animate__fadeOutUpBig')){
+//     element.classList.remove('animate__animated', 'animate__fadeOutUpBig')
+//   } else {
+//     element.classList.add('animate__animated', `${typeOfAnimation}`)
+//   }
+// })
+
+elementOpen.addEventListener('click', addAnimation.bind(null,'animate__fadeInDownBig','animate__fast'))
+elementClose.addEventListener('click', addAnimation.bind(null,'animate__fadeOutUpBig','animate__slow'))
+
+function addAnimation (typeOfAnimation, slow) {
+  if (element.classList.contains('animate__fadeInDownBig')) {
+    element.classList.remove('animate__animated', 'animate__fadeInDownBig', 'animate__fast')
+
+  }
+  if (element.classList.contains('animate__fadeOutUpBig')){
+    element.classList.remove('animate__animated', 'animate__fadeOutUpBig', 'animate__slow')
+
+  } 
+    
+     element.classList.add('animate__animated', `${typeOfAnimation}`,`${slow}`) 
+
+}
+
+
+
+
+
+    

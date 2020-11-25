@@ -22,6 +22,27 @@ $(window).on('load resize orientationchange', function() {
   }
 })
 
+// $('.carousel').slick({
+//   infinite: false,
+//   slidesToShow: 3,
+//   slidesToScroll: 3,
+//   arrows: false,
+//   adaptiveHeight: true,
+//   responsive: [
+//     {
+//       breakpoint: 640,
+//       settings: {
+//         initialSlide: 1,
+//         slidesToShow: 1,
+//         slidesToScroll: 1,
+//         centerMode: true,
+//         dots: true,
+//       }
+//     },
+//   ]
+// });
+
+
 
 
 

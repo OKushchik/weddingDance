@@ -414,9 +414,9 @@ a {
     box-shadow: 0px 4px 30px rgba(207, 207, 207, 0.25);
     border-radius: 2px;
     width: 95%;
-    
+    min-height: 440px;
+    overflow: hidden;
     &__img {
-
         img {
             width: 100%;
         }
@@ -591,7 +591,7 @@ footer {
 
     .couch-card {
         &__img {
-            width: 60%
+            width: 55%
         }
         &__num {
             margin-top: 15px;
@@ -664,6 +664,7 @@ footer {
             justify-content: center;
             width: 100%;
             margin: auto;
+            margin-top: 20px;
 
             button {
                 width: 15px;

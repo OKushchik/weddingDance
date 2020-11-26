@@ -36,6 +36,7 @@ $(window).on('load resize orientationchange', function() {
 //         slidesToShow: 1,
 //         slidesToScroll: 1,
 //         centerMode: true,
+//         adaptiveHeight: true,
 //         dots: true,
 //       }
 //     },
@@ -54,8 +55,8 @@ $('.carousel-2').slick({
   slidesToScroll: 2,
   centerMode: false,
   centerPadding: '50px',
-  prevArrow: '<button type="button" class="arrows__prev arrow"><i class="icon icon-arrowPrev"></i></button>',
-  nextArrow: '<button type="button" class="arrows__next arrow"><i class="icon icon-arrowNext"></i></button>',
+  prevArrow: '<button type="button" class="arrows__prev arrow"><i class="fas fa-arrow-left"></i></button>',
+  nextArrow: '<button type="button" class="arrows__next arrow"><i class="fas fa-arrow-right"></i></button>',
   appendArrows: $('.arrows'),
   responsive: [
     {
@@ -77,7 +78,7 @@ $('.carousel-2').slick({
 //   function imitErrows (){
 //     let slickPrev = document.querySelector('.slick-prev');
 //     let slickNext = document.querySelector('.slick-next');
-
+ 
 //     arrowsPrev.addEventListener('click', getObj.bind(null,slickPrev))
 //     arrowsNext.addEventListener('click', getObj.bind(null,slickNext))
 
@@ -90,7 +91,7 @@ $('.carousel-2').slick({
 
 // errowsInfo
 let arrowsInform = document.querySelector('.arrows__inform');
-let transform = document.querySelector('.slick-track');
+let transform = document.querySelector('.couches__section');
 
 function changArrowInfo (){
   let current = document.querySelector('.couches .slick-current');
@@ -115,10 +116,9 @@ arrowsNext.addEventListener('click', function(){
 arrowsPrev.addEventListener('click', function(){
   changArrowInfo ()
 })
-transform.onclick = function(){
+transform.addEventListener ('mouseup', function(){
   changArrowInfo ()
-}
-
+})
 
 
 /////
@@ -154,7 +154,14 @@ function addAnimation (typeOfAnimation, slow) {
 }
 
 
+// $(window).on('load', function() {
+//   setTimeout(function(){ 
 
+//     // document.querySelector('.show-case__text').style.display = 'block';
+//     document.querySelector('.show-case__img').classList.add('changeSizeImg');
+//     document.querySelector('.show-case__text').classList.add('changeSizeTitle');
 
+// }, 1000);
 
-    
+// })
+

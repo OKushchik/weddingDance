@@ -106,5 +106,30 @@ function addAnimation (typeOfAnimation, slow) {
 
 }
 
+////////Animation on offer-section
+let offerSection = document.querySelectorAll('.offer-section');
+
+for(let i=0;i<offerSection.length;i++){
+  offerSection[i].addEventListener('mouseover', function (event) {
+    let item = event.target.closest('.offer-section')
+
+    if(item.classList.contains('animate__swing') === false){
+      item.classList.remove('animate__animated', 'animate__fadeIn')
+      item.classList.add('animate__animated', 'animate__swing')
+      item.style.animationName = 'swing' 
+    }
+  })
+
+  offerSection[i].addEventListener('mouseout', function (event) {
+    let item = event.target.closest('.offer-section')
+
+    if (item.classList.contains('animate__swing')) {
+      item.classList.remove('animate__animated', 'animate__swing')
+      item.style.animationName = '';
+    }
+
+  })
+
+}
 
 

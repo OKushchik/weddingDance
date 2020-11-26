@@ -404,13 +404,19 @@ a {
     width: 95%;
     min-height: 440px;
     overflow: hidden;
+    margin: 0 15px;
     &__img {
+        width: 100%;
+
         img {
             width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     }
     &__inform {
         margin-left: 33px;
+        width: 100%;
 
         th {
             text-align: left;
@@ -503,7 +509,7 @@ footer {
 @media only screen and (max-width: 1110px) {
     .show-case {
         &__text{
-            padding-top: 0;
+            padding-top: 20px;
             padding-right: 20px;
         }
 
@@ -553,6 +559,7 @@ footer {
     .navigation {
         padding-left: 0;
         padding-right: 0;
+        margin-right: 16px;
     }  
 
     .show-case {
@@ -573,14 +580,15 @@ footer {
     }
 
     .couch-card {
+        display: block;
         &__img {
-            width: 55%
+            width: 100%;
         }
         &__num {
             margin-top: 15px;
         }
         &__inform {
-            width: 40%;
+            width: 100%;
             margin-left: 10px;
 
             th {
@@ -594,7 +602,7 @@ footer {
             }
 
             &__btn {
-                width: 100%;
+                width: 40%;
                 margin-top: 20px;
             }
 
@@ -707,4 +715,3 @@ footer {
         }
     }
 }
-

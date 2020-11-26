@@ -3,14 +3,14 @@ $(window).on('load resize orientationchange', function() {
   if ($('.carousel').hasClass('slick-initialized') === false && $(window).width() < 824) {
     $('.carousel').slick({
       dots: true,
-      infinite: false,
+      infinite: true,
       slidesToShow: 1,
       slidesToScroll: 1,
       mobileFirst: true,
       arrows: false,
       centerMode: true,
       adaptiveHeight: true,
-      initialSlide: 1,
+      initialSlide: 0,
       responsive: [
         {
           breakpoint: 640,
@@ -28,7 +28,7 @@ $('.carousel-2').slick({
   slidesToShow: 2,
   slidesToScroll: 2,
   centerMode: false,
-  centerPadding: '50px',
+
   prevArrow: '<button type="button" class="arrows__prev arrow"><i class="fas fa-arrow-left"></i></button>',
   nextArrow: '<button type="button" class="arrows__next arrow"><i class="fas fa-arrow-right"></i></button>',
   appendArrows: $('.arrows'),
@@ -36,7 +36,8 @@ $('.carousel-2').slick({
     {
       breakpoint: 640,
       settings: {
-        initialSlide: 1,
+        infinite: true,
+        initialSlide: 0,
         slidesToShow: 1,
         slidesToScroll: 1,
         centerMode: true,
@@ -78,6 +79,9 @@ arrowsPrev.addEventListener('click', function(){
 transform.addEventListener ('mouseup', function(){
   changArrowInfo ()
 })
+transform.addEventListener ('touchend', function(){
+  changArrowInfo ()
+})
 
 
 /////Popap animation
@@ -101,4 +105,6 @@ function addAnimation (typeOfAnimation, slow) {
      element.classList.add('animate__animated', `${typeOfAnimation}`,`${slow}`) 
 
 }
+
+
 

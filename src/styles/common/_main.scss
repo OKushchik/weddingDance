@@ -420,16 +420,18 @@ a {
         width: 100%;
 
         th {
+            display: inline-block;
             text-align: left;
             padding-top: 24px;
+            padding-right: 10px;
             font-family: "Montserrat-400";
             font-size: 16px;
             opacity: 0.5;
         }
 
         td {
+            display: inline-block;
             text-align: left;
-            padding-top: 24px;
             font-family: "Montserrat-400";
             font-size: 16px;            
         }

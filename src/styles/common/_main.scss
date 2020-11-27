@@ -563,6 +563,11 @@ footer {
         margin-right: 16px;
     }  
 
+    .nav {
+        &__btn {
+            margin-left: 10px;
+        }
+    }
     .show-case {
         flex-direction: column-reverse;
 
